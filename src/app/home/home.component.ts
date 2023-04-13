@@ -98,6 +98,7 @@ export class HomeComponent {
   }
 
   showModalComic(value: string): void {
+    value = value.replace("http", "https");
     this.comicService.getComic(value)
       .subscribe(response => {
         this.comicInUse = response.data.results[0];
