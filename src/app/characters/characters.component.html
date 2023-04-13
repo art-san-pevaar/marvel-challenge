@@ -1,0 +1,18 @@
+<div class="flex-container">
+    <div class="card w-75 character-card">
+        <div>
+            <img src="{{ character.thumbnail.path }}" width="400">
+        </div>
+        <div class="card-text">
+            <div>
+                <h2>{{ character.name }}</h2>
+                <p>{{ character.description }}</p>
+            </div>
+            <div>
+                <a href="javascript:void(0)" class="btn btn-dark" [routerLink]="['']">Back</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+

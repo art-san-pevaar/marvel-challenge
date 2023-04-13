@@ -1,0 +1,23 @@
+<div class="flex-container">
+    <div class="card w-75 comic-card">
+        <div>
+            <img src="{{ comic.thumbnail.path }}" width="400">
+        </div>
+        <div class="card-text">
+            <div>
+                <h2>{{ comic.title }}</h2>
+                <p>{{ comic.description }}</p>
+            </div>
+            <div>
+                <h5>Created by:</h5>
+                <p *ngFor="let creator of comic.creators.items.slice(0, 4)">
+                    {{ creator.name }}
+                </p>
+            </div>
+            <div>
+                <a *ngIf="comic.marvelDetail != null" class="btn btn-dark" href="{{ comic.marvelDetail }}" target="_blank" style="margin-right: 10px;">Marvel page detail</a>
+                <a href="javascript:void(0)" class="btn btn-dark" [routerLink]="['']">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

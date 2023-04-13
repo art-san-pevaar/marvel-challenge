@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.character-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #F0F0F0;
+    padding: 30px;
+}
+
+.card-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+}
